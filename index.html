@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>📚 Student Productivity Dashboard</h1>
+        <button id="themeBtn" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tasks</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </nav>
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+
+        <!-- Left Side -->
+        <section class="left">
+
+            <!-- Dashboard Cards -->
+            <div class="cards">
+
+                <div class="card">
+                    <h2>📖 Courses</h2>
+                    <p>5 Active Courses</p>
+                </div>
+
+                <div class="card">
+                    <h2>✅ Tasks</h2>
+                    <p id="taskCount">0 Pending</p>
+                </div>
+
+                <div class="card">
+                    <h2>🎯 Goal</h2>
+                    <p>Complete Internship Tasks</p>
+                </div>
+
+            </div>
+
+            <!-- To-Do List -->
+            <div class="todo">
+
+                <h2>📝 My Task List</h2>
+
+                <input type="text" id="taskInput" placeholder="Enter a task">
+
+                <button onclick="addTask()">Add Task</button>
+
+                <ul id="taskList"></ul>
+
+            </div>
+
+        </section>
+
+        <!-- Right Side -->
+        <aside>
+
+            <h2>📩 Contact Form</h2>
+
+            <form id="contactForm">
+
+                <input type="text" id="name" placeholder="Your Name">
+
+                <input type="email" id="email" placeholder="Your Email">
+
+                <textarea id="message" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Student Productivity Dashboard | Created by Dharani</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
